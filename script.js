@@ -62,28 +62,16 @@ async function fetchCities() {
         cities.innerHTML = ""
 
         data.data.forEach(element => {
-            
-            
             let city = document.createElement("button")
             city.classList.add("bg-slate-800", "text-slate-200", "p-2", "my-2", "rounded-md", "drop-shadow-2xl")
             city.innerHTML = `${element.city}`
             cities.append(city)
-            
-        });
-
-        
-
-        
-        
-        
+        });  
     } catch (error) {
         cities.innerHTML = "Something went wrong..!"
         console.log(error);
-        
     }
 }
-
-
 
 findCities.addEventListener("input", function(e){
 
@@ -92,7 +80,6 @@ findCities.addEventListener("input", function(e){
         cities.classList.add("opacity-100")
         cities.classList.remove("invisible")
         cities.classList.add("visible")
-
     }
     else{
         cities.classList.remove("opacity-100")

@@ -10,8 +10,14 @@
 
         <h1 class="text-4xl font-bold text-slate-900">Weather application</h1>
 
+        <div class="w-72 mt-4 rounded-t-md bg-slate-800 text-slate-200 flex-col relative">
+            <input class="findCities text-center py-1 px-4 outline-0 w-full" type="text" placeholder="Find your cities here">
+            <div class="cities opacity-0 invisible z-20 bg-slate-700 rounded-b-md overflow-hidden  absolute left-0 top-full w-full p-3 max-h-96 overflow-y-scroll flex flex-col"></div>
+        </div>
+
         <h3 class="weather my-4"></h3>
         <h3 class="time"></h3>
+        
 
     <script src="script.js"></script>
 </body>
